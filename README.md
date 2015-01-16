@@ -8,6 +8,17 @@ DEPENDENCIES:
 =============
 qpdf
 pdftk
+pdftotext (brew install poppler)
+
+
+USAGE:
+======
+*-h list help
+*-c create directory structure for current month
+*-e edit online document
+*-p process current month
+*-s send expense report
+* no param -> automated mode c -> p -> s
 
 HOW TO:
 =======
