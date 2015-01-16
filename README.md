@@ -6,25 +6,27 @@ for GD expenses report.
 
 DEPENDENCIES:
 =============
-qpdf
-pdftk
-pdftotext (brew install poppler)
+* qpdf
+* pdftk
+* pdftotext (MAC - brew install poppler)
 
 
 USAGE:
 ======
-*-h list help
-*-c create directory structure for current month
-*-e edit online document
-*-p process current month
-*-s send expense report
-* no param -> automated mode c -> p -> s
+* -a automated walkthrough
+* -e edit online document
+* -c create directory structure for current month
+* -h list help
+* -s send expense report
+* no param -> help
 
 HOW TO:
 =======
-* write your login to creds file, ex. mwe
-* run ./expense.sh
-* it will create directory structure for current monthi, ex. 2014-12
-* script will print directory path where you should copy all your expense PDFs, ex. 2014-12/sources
-* run ./expense.sh again
-* check your month directory, month expense report will be placed here, ex. 2014-12/mwe-expense-report-2014-12.pdf
+* write your **login** to creds file, ex. michal.weiser
+* run ./expense.sh -a
+* follow instructions
+
+TODO:
+=====
+* add GDocs API fro automatic document updates
+* enable mail sending
